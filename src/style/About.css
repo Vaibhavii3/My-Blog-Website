@@ -1,0 +1,45 @@
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #007BFF;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    margin: 20px 0 10px;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .social-links a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #555757;
+  }
+  

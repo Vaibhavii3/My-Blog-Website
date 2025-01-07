@@ -1,0 +1,18 @@
+
+.blog-page {
+    display: flex;
+  }
+  
+  .blog-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .blog-grid > div {
+    flex: 1;
+  }
+  
+
