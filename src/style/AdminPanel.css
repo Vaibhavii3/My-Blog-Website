@@ -1,0 +1,125 @@
+/* AdminPanel.css */
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .admin-panel {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-panel-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 20px;
+  }
+  
+  /* Section Styles */
+  .admin-section {
+    margin-bottom: 30px;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    border-bottom: 2px solid #555;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    color: #444;
+  }
+  
+  /* List Styles */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e8e8e8;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .category-item,
+  .blog-item {
+    font-size: 1rem;
+  }
+  
+  .category-name,
+  .blog-title,
+  .blog-category {
+    margin-right: 10px;
+    color: #333;
+  }
+  
+  /* Form Styles */
+  input[type="text"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .add-button,
+  .delete-button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  /* Button Styles */
+  .add-button {
+    background-color: #4a4a4a;
+    color: #fff;
+  }
+  
+  .add-button:hover {
+    background-color: #333;
+  }
+  
+  .delete-button {
+    background-color: #d9534f;
+    color: #fff;
+  }
+  
+  .delete-button:hover {
+    background-color: #b52a27;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .delete-button {
+      margin-top: 10px;
+    }
+  }
+  
