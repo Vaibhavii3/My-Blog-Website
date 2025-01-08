@@ -21,7 +21,8 @@
   
   p {
     font-size: 1rem;
-    color: #555;
+    /* color: #555; */
+    color: #f0e6e6;
   }
   
   .social-links {
@@ -33,7 +34,8 @@
   
   .social-links a {
     text-decoration: none;
-    color: #000000;
+    /* color: #000000; */
+    color: #f0e6e6;
     font-weight: bold;
     font-size: 1.2rem;
     transition: color 0.3s ease;

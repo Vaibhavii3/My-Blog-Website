@@ -25,6 +25,9 @@ const About = () => {
           <a href="https://github.com/vaibhavii3" target="_blank" rel="noreferrer">
             <i className="fab fa-github"></i> 
           </a>
+          <a href="https://youtube.com/@codingwithv30" target="_blank" rel="noreferrer">
+            <i className="fab fa-youtube"></i> 
+          </a>
         </div>
       </div>
     </div>
