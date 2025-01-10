@@ -9,6 +9,7 @@ const BlogPage = () => {
   const [blogs, setBlogs] = useState([]);
   const [filteredBlogs, setFilteredBlogs] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('all');
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
   useEffect(() => {
     (async () => {
@@ -36,9 +37,18 @@ const BlogPage = () => {
     }
   }, [selectedCategory, blogs]);
 
+  const toggleNavbar = () => {
+    setIsNavbarOpen(!isNavbarOpen);
+  };
+
   return (
     <div className="blog-page">
-      <Navbar />
+    <div className={`navbar ${isNavbarOpen ? "open" : ""}`}>
+        <Navbar />
+      </div>
+      <div className="hamburger" onClick={toggleNavbar}>
+        ☰
+      </div>
       <div className="main-content">
         <Collection onCategorySelect={setSelectedCategory} />
         <div className="blog-grid">

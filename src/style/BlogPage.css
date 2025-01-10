@@ -18,8 +18,26 @@
   }
 
 .navbar {
-  position: fixed; /* Fix it to the left side */
+  position: fixed; 
   top: 0;
   left: 0;
   bottom: 0;
+}
+
+@media (min-width: 769px) {
+  .blog-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
