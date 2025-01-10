@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import "../style/Navbar.css";
 import About from "./About";
-// import Collection from "./Collection";
 
 const Navbar = () => {
 
@@ -12,18 +11,18 @@ const Navbar = () => {
   };
 
     return (
-      <nav className="navbar">
-        <div className="navbar-brand">
-        <button className="menu-toggle" onClick={toggleMenu}>
-          ☰
-        </button>
-      </div>
 
-        <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
+      <div>
+
+      <button className="hamburger" onClick={toggleMenu}>
+        ☰
+      </button>
+      <nav className={`sidebar ${isMenuOpen ? 'open' : ''}`}>
+        <ul>
           <About />
-          {/* <Collection /> */}
         </ul>
       </nav>
+      </div>
     );
   };
   

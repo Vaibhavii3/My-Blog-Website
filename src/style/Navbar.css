@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
     width: 280px;
     padding: 20px;
     background-color: #0a090a;
@@ -26,7 +26,7 @@
   .navbar a:hover {
     color: #007BFF;
   }
-  
+   */
   
 /* Navbar.css */
 
@@ -39,11 +39,11 @@
   color: #fff;
 } */
 
-.navbar-brand a {
+/* .navbar-brand a {
   color: #fff;
   text-decoration: none;
   font-size: 1.5rem;
-}
+} */
 
 .menu-toggle {
   display: none;
@@ -54,7 +54,7 @@
   cursor: pointer;
 }
 
-.nav-links {
+/* .nav-links {
   list-style: none;
   display: flex;
   gap: 1rem;
@@ -63,30 +63,51 @@
 .nav-links a {
   color: #fff;
   text-decoration: none;
+} */
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1001;
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Hidden by default */
+  width: 250px;
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+  padding-top: 60px;
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.sidebar.open {
+  left: 0; /* Visible when open */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 1rem;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
-  .menu-toggle {
+  .hamburger {
     display: block;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    gap: 0;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-  }
-
-  .nav-links.open {
-    display: flex;
-  }
-
-  .nav-links li {
-    text-align: center;
-    padding: 1rem 0;
   }
 }
