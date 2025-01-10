@@ -1,12 +1,13 @@
 import "../style/Navbar.css";
 import About from "./About";
+// import Collection from "./Collection";
 
 const Navbar = () => {
     return (
       <nav className="navbar">
         <ul>
           <About />
-          <li><a href="#collection">Collection</a></li>
+          {/* <Collection /> */}
         </ul>
       </nav>
     );

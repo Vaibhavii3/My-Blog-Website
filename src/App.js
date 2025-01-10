@@ -1,13 +1,16 @@
 import './App.css';
-import AdminPanel from './components/AdminPanel';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import BlogPage from './components/BlogPage';
+import BlogDetails from './components/BlogDetails';
 
 function App() {
   return (
-    <div className="App">
-      <BlogPage />
-      <AdminPanel />
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<BlogPage />} />
+        <Route path='/blog/:slug' element={<BlogDetails />} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -1,6 +1,7 @@
 
 .blog-page {
     display: flex;
+    overflow: hidden;
   }
   
   .blog-grid {
@@ -9,10 +10,16 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
+    margin-left: 320px;
   }
   
   .blog-grid > div {
     flex: 1;
   }
-  
 
+.navbar {
+  position: fixed; /* Fix it to the left side */
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
