@@ -1,4 +1,4 @@
-/* .navbar {
+.navbar {
     width: 280px;
     padding: 20px;
     background-color: #0a090a;
@@ -26,7 +26,7 @@
   .navbar a:hover {
     color: #007BFF;
   }
-   */
+  
   
 /* Navbar.css */
 
@@ -70,7 +70,8 @@
   font-size: 2rem;
   background: none;
   border: none;
-  color: #fff;
+  /* color: #fff; */
+  color: #d73737;
   cursor: pointer;
   position: fixed;
   top: 1rem;
