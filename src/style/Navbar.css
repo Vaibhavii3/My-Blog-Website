@@ -1,76 +1,27 @@
 .navbar {
-    width: 280px;
-    padding: 20px;
-    background-color: #0a090a;
-    height: 100vh;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .navbar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .navbar li {
-    margin: 10px 0;
-  }
-  
-  .navbar a {
-    text-decoration: none;
-    color: #fceeee;
-    font-weight: bold;
-    transition: color 0.2s;
-  }
-  
-  .navbar a:hover {
-    color: #007BFF;
-  }
-  
-  
-/* Navbar.css */
-
-/* .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  background-color: #333;
-  color: #fff;
-} */
-
-/* .navbar-brand a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.5rem;
-} */
-
-.menu-toggle {
-  display: none;
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  color: #fff;
-  cursor: pointer;
+  width: 280px;
+  padding: 20px;
+  background-color: #0a090a;
+  height: 100vh;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  display: none; /* Hidden by default */
 }
 
-/* .nav-links {
+.navbar.open {
+  display: block; /* Visible when open */
+}
+
+.navbar ul {
   list-style: none;
-  display: flex;
-  gap: 1rem;
+  padding: 0;
+  margin: 0;
 }
-
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-} */
 
 .hamburger {
   display: none;
   font-size: 2rem;
   background: none;
   border: none;
-  /* color: #fff; */
   color: #d73737;
   cursor: pointer;
   position: fixed;
@@ -79,36 +30,27 @@
   z-index: 1001;
 }
 
-/* Sidebar styles */
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: -250px; /* Hidden by default */
-  width: 250px;
-  height: 100%;
-  background-color: #000;
-  color: #fff;
-  padding-top: 60px;
-  transition: left 0.3s ease-in-out;
-  z-index: 1000;
-}
-
-.sidebar.open {
-  left: 0; /* Visible when open */
-}
-
-.sidebar ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.sidebar ul li {
-  padding: 1rem;
-  text-align: center;
-}
-
+/* Media Queries */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar.open {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar {
+    display: block; /* Always visible on larger screens */
+  }
+
+  .hamburger {
+    display: none;
   }
 }
