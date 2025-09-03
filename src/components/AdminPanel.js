@@ -8,7 +8,6 @@ const AdminPanel = () => {
     const [newBlog, setNewBlog] = useState({ title: '', content: '', category: ''});
     const [newCategory, setNewCategory] = useState('');
 
-    //fetch blogs and categories
     useEffect(() => {
         const fetchData = async () => {
             const blogResponse = await axios.get('/api/blogs');
@@ -19,7 +18,6 @@ const AdminPanel = () => {
         fetchData();
     }, []);
 
-    //add a new blog
     const addBlog = async () => {
         if (!newBlog.title || !newBlog.content || !newBlog.category) {
             alert('Please fill in all blog fields.');
@@ -30,7 +28,6 @@ const AdminPanel = () => {
         setNewBlog({ title: '', content: '', category: ''});
     };
 
-    //add a new category
     const addCategory = async () => {
         if (!newCategory) {
             alert('Category name cannot be empty.');
@@ -41,13 +38,11 @@ const AdminPanel = () => {
         setNewCategory('');
     };
 
-    //Delete a blog
     const deleteBlog = async (id) => {
         await axios.delete(`/api/blogs/${id}`);
         setBlogs(blogs.filter((blog) => blog.id !== id));
     };
 
-    //Delete a category
     const deleteCategory = async (id) => {
         await axios.delete(`/api/categories/${id}`);
         setCategories(categories.filter((category) => category.id !== id));

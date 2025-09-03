@@ -4,11 +4,11 @@
   background-color: #0a090a;
   height: 100vh;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  display: none; /* Hidden by default */
+  display: none; 
 }
 
 .navbar.open {
-  display: block; /* Visible when open */
+  display: block; 
 }
 
 .navbar ul {
@@ -30,7 +30,6 @@
   z-index: 1001;
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -47,7 +46,7 @@
 
 @media (min-width: 769px) {
   .navbar {
-    display: block; /* Always visible on larger screens */
+    display: block; 
   }
 
   .hamburger {

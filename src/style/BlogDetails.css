@@ -1,5 +1,3 @@
-/* BlogDetails.css */
-
 body {
     background-color: #f4f4f4;
     font-family: "Arial", sans-serif;
@@ -58,7 +56,6 @@ body {
     padding: 2rem;
   }
   
-  /* Optional hover effect for images */
   .blog-image:hover {
     filter: grayscale(80%);
     transition: filter 0.3s ease;
